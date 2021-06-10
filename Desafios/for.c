@@ -4,12 +4,12 @@
 
 int main()
 {
-    char name[50] = "";
+    char name[25] = "";
     printf("Name: ");
-    scanf("%s", &name);
+    fgets(name, sizeof(name) / sizeof(char), stdin);
     for (int letter = 1; letter <= strlen(name); letter++)
     {
-        printf("%d\n", letter);
+        printf("%d ", letter);
     }
     return 0;
 }
